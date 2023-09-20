@@ -48,6 +48,7 @@ export const SearchPage = () => {
               autoComplete="off"
               value={ searchText }
               onChange={ onInputChange }
+              aria-label='form'
             />
 
             <button className="btn btn-outline-primary mt-1">
@@ -70,6 +71,7 @@ export const SearchPage = () => {
           <div 
             className="alert alert-danger animate__animated animate__fadeIn" 
             style={{ display: showError ? '' : 'none'}}
+            aria-label='noHero'
           >
             No hero with <b>{ q }</b>
           </div>
